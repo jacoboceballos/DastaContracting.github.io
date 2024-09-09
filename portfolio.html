@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Dasta - Portfolio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="portfolio.css" />
+    
+</head>
+<body>
+
+    <!-- Header -->
+    <header id="header" class="alt">
+        <div class="logo"><a href="index.html">Dasta <span>Your Trusted Contractor</span></a></div>
+        <a href="#menu">Menu</a>
+    </header>
+
+    <!-- Nav -->
+    <nav id="menu">
+        <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html" >Portfolio</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main -->
+    <section id="portfolio" class="wrapper style2">
+        <div class="inner">
+            <header class="align-center">
+                <h2>Our Portfolio</h2>
+                <p>Explore our diverse range of projects, showcasing our commitment to quality, detail, and client satisfaction.</p>
+            </header>
+
+            <h3>EXTERIOR RENOVATION</h3>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="DASTA CONTRACTING/InteriorOld.jpeg" alt="Exterior Before 1"></div>
+                    <div class="swiper-slide"><img src="DASTA CONTRACTING/OldInterior.jpeg" alt="Exterior Before 2"></div>
+                    <div class="swiper-slide"><img src="DASTA CONTRACTING/OldInterior.jpeg" alt="Exterior Before 3"></div>
+                    <div class="swiper-slide"><img src="DASTA CONTRACTING/InteriorRenovation1.jpeg" alt="Exterior After 1"></div>
+                    <div class="swiper-slide"><img src="DASTA CONTRACTING/newinterior1.jpeg" alt="Exterior After 2"></div>
+                    <div class="swiper-slide"><img src="DASTA CONTRACTING/NewInterior.jpeg" alt="Exterior After 3"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+            <h3>Interior Renovation</h3>
+            <div class="swiper mySwiper" style="margin-top: 50px;"> <!-- Added margin-top for spacing -->
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="DASTA CONTRACTING/InteriorOld.jpeg" alt="Interior Before 1"></div>
+                    <div class="swiper-slide"><img src="DASTA CONTRACTING/OldInterior.jpeg" alt="Interior Before 2"></div>
+                    <div class="swiper-slide"><img src="DASTA CONTRACTING/OldInterior.jpeg" alt="Interior Before 3"></div>
+                    <div class="swiper-slide"><img src="DASTA CONTRACTING/InteriorRenovation1.jpeg" alt="Interior After 1"></div>
+                    <div class="swiper-slide"><img src="DASTA CONTRACTING/newinterior1.jpeg" alt="Interior After 2"></div>
+                    <div class="swiper-slide"><img src="DASTA CONTRACTING/NewInterior.jpeg" alt="Interior After 3"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+            <!-- Additional slideshows can be added here with increased margin-top as needed -->
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <ul class="icons">
+                <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+                <li><a href="#" class="icon fa-envelope-o"><span the="label">Email</span></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var allSwipers = document.querySelectorAll('.mySwiper');
+        allSwipers.forEach(function(swiperContainer) {
+            new Swiper(swiperContainer, {
+              slidesPerView: 1,
+              spaceBetween: 30,
+              loop: true,
+              pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+              },
+              autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+              },
+            });
+        });
+    </script>
+
+    <!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/skel.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,122 @@
+/* Reset default margins and padding */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+/* Background and overlay */
+body {
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: #333; /* Neutral text color */
+}
+
+
+
+/* Main section */
+section#services {
+  background-color: transparent;
+  background-image: url('DASTA CONTRACTING/newfrontofhouse.png'); /* First deck image as background */
+  background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+
+}
+
+/* Footer */
+footer#footer {
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 1000;
+}
+
+ul.icons a {
+    color: white;
+    margin: 0 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Service boxes */
+.service-box {
+    border: 2px solid #333; /* Dark border */
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px; /* Rounded corners */
+    text-align: center;
+    color: rgb(5, 5, 5); /* Text color for readability */
+}
+
+.service-box .content h2 {
+    color: #030303;
+    margin-bottom: 10px;
+}
+
+.service-box footer.align-center a.button.alt {
+    color: rgb(4, 4, 4);
+    background-color: #f7f7f8;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px; /* Rounded button */
+    transition: background-color 0.3s ease;
+}
+
+.service-box footer.align-center a.button.alt:hover {
+    background-color: #e0e0e0; /* Slightly darker on hover */
+}
+
+/* Image layout */
+.serviceimage {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 15px;
+    flex-wrap: wrap; /* Wrap images to the next line on smaller screens */
+}
+
+.serviceimage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px; /* Rounded corners for images */
+}
+
+.deckimage, .fence-image, .shedimage, .roofingimage {
+    flex: 1 1 45%; /* Allow flexibility for responsiveness */
+    padding-top: 45%; /* Make the div a square */
+    position: relative;
+    box-sizing: border-box;
+    margin: 5px;
+}
+
+.deckimage img, .fence-image img, .shedimage img, .roofingimage img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px; /* Rounded corners for images */
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .service-box {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .deckimage, .fence-image, .shedimage, .roofingimage {
+        flex: 1 1 100%; /* Full width on smaller screens */
+        padding-top: 100%; /* Maintain square aspect ratio */
+    }
+}

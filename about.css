@@ -1,0 +1,107 @@
+/* General Body and HTML Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    padding-top: 50px; /* This will push the content down */
+    height: 100vh;
+    background-image: url('DASTA CONTRACTING/newfrontofhouse.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: #333; /* Default text color */
+}
+
+
+
+/* About Section Styles */
+section#about {
+    background-color: rgba(255, 255, 255, 0.8); /* Make about section slightly transparent */
+    padding: 20px;
+    margin: 80px 20px 20px 20px; /* Adjusted to make room for fixed header */
+    border-radius: 8px; /* Rounded corners */
+    color: #333; /* Text color */
+}
+
+section#about .inner {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+section#about h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+section#about p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Testimonials and Awards Boxes */
+#testimonials, #awards {
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent background */
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+#testimonials header, #awards header {
+    margin-bottom: 15px;
+}
+
+blockquote {
+    background: rgba(0, 0, 0, 0.05); /* Light grey background for quotes */
+    border-left: 5px solid #333; /* Dark border on the left */
+    margin: 10px 0;
+    padding: 10px 20px;
+    font-style: italic;
+    font-size: 1em;
+}
+
+/* Call to Action Button */
+footer.align-center a.button.alt {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px; /* Rounded button */
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+footer.align-center a.button.alt:hover {
+    background-color: #555; /* Slightly darker on hover */
+}
+
+/* Footer Styles */
+footer#footer {
+    background-color: rgba(0, 0, 0, 0.9); /* Darker footer */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+ul.icons a {
+    color: white;
+    margin: 0 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+    h3 {
+        margin-top: 40px; /* Smaller margin on mobile */
+    }
+
+    section#about {
+        margin: 100px 10px 20px 10px; /* Adjusted for smaller screens */
+    }
+}

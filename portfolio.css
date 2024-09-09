@@ -1,0 +1,63 @@
+/* General Body and Header Styles */
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #818080;
+    background-image: url('DASTA CONTRACTING/newfrontofhouse.png'); /* First deck image as background */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+
+}
+
+
+
+/* Swiper and Slide Styles */
+.swiper-container {
+    width: 100%;
+    height: auto;
+    
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Centering slides content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.swiper-slide img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Increasing spacing between slideshows specifically */
+h3 {
+    margin-top: 80px; /* Increased top margin for headings */
+}
+
+/* Footer Styles */
+footer#footer {
+    padding: 1em 0;
+    background: #333;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer#footer ul.icons li a {
+    color: white;
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+    h3 {
+        margin-top: 40px; /* Smaller margin on mobile */
+    }
+}
