@@ -4,35 +4,38 @@
     <title>Dasta - Portafolio</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="portfolio.css" />
 </head>
 <body>
+
+    <!-- Header -->
     <header id="header" class="alt">
         <div class="logo"><a href="index_es.html">Dasta <span>Su Contratista de Confianza</span></a></div>
         <a href="#menu">Menú</a>
     </header>
+
+    <!-- Nav -->
     <nav id="menu">
         <ul class="links">
             <li><a href="index_es.html">Inicio</a></li>
             <li><a href="services_es.html">Servicios</a></li>
-            <li class="active"><a href="portfolio_es.html">Portafolio</a></li>
+            <li><a href="portfolio_es.html" class="active">Portafolio</a></li>
             <li><a href="about_es.html">Sobre Nosotros</a></li>
             <li><a href="contact_es.html">Contacto</a></li>
         </ul>
     </nav>
-    <ul class="language-switch">
-        <li><a href="portfolio.html">English</a></li>
-        <li><a href="portfolio_es.html">Español</a></li>
-    </ul>
+
+    <!-- Main -->
     <section id="portfolio" class="wrapper style2">
         <div class="inner">
             <header class="align-center">
                 <h2>Nuestro Portafolio</h2>
-                <p>Explora nuestra amplia gama de proyectos, mostrando nuestro compromiso con la calidad, el detalle y la satisfacción del cliente.</p>
+                <p>Explora nuestra diversa gama de proyectos, que muestra nuestro compromiso con la calidad, el detalle y la satisfacción del cliente.</p>
             </header>
 
-            <h3>Renovación Exterior</h3>
+            <h3>RENOVACIÓN EXTERIOR</h3>
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide"><img src="DASTA CONTRACTING/InteriorOld.jpeg" alt="Exterior Antes 1"></div>
@@ -46,7 +49,7 @@
             </div>
 
             <h3>Renovación Interior</h3>
-            <div class="swiper mySwiper" style="margin-top: 50px;">
+            <div class="swiper mySwiper" style="margin-top: 50px;"> <!-- Added margin-top for spacing -->
                 <div class="swiper-wrapper">
                     <div class="swiper-slide"><img src="DASTA CONTRACTING/InteriorOld.jpeg" alt="Interior Antes 1"></div>
                     <div class="swiper-slide"><img src="DASTA CONTRACTING/OldInterior.jpeg" alt="Interior Antes 2"></div>
@@ -57,17 +60,51 @@
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
+
+            <!-- Additional slideshows can be added here with increased margin-top as needed -->
+
         </div>
     </section>
+
+    <!-- Footer -->
     <footer id="footer">
         <div class="container">
             <ul class="icons">
                 <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
                 <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
                 <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-                <li><a href="#" class="icon fa-envelope-o"><span class="label">Correo</span></a></li>
+                <li><a href="#" class="icon fa-envelope-o"><span the="label">Correo Electrónico</span></a></li>
             </ul>
         </div>
     </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var allSwipers = document.querySelectorAll('.mySwiper');
+        allSwipers.forEach(function(swiperContainer) {
+            new Swiper(swiperContainer, {
+              slidesPerView: 1,
+              spaceBetween: 30,
+              loop: true,
+              pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+              },
+              autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+              },
+            });
+        });
+    </script>
+
+    <!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/skel.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
 </body>
 </html>
