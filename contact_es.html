@@ -35,16 +35,17 @@
                 <p>Estamos aquí para ayudarte con tus necesidades de construcción. Tu satisfacción es nuestra prioridad.</p>
             </header>
             <div class="content">
-                <form method="post" action="contact_form.php">
+                <!-- Contact Form with Formspree -->
+                <form method="POST" action="https://formspree.io/f/meoqoggk">
                     <div class="row uniform">
                         <div class="6u 12u$(xsmall)">
-                            <input type="text" name="name" id="name" value="" placeholder="Nombre" required />
+                            <input type="text" name="name" id="name" placeholder="Nombre" required />
                         </div>
                         <div class="6u$ 12u$(xsmall)">
-                            <input type="email" name="email" id="email" value="" placeholder="Correo Electrónico" required />
+                            <input type="email" name="email" id="email" placeholder="Correo Electrónico" required />
                         </div>
                         <div class="12u$">
-                            <textarea name="message" id="message" placeholder="Ingresa tu mensaje" rows="6" required></textarea>
+                            <textarea name="message" id="message" placeholder="Escribe tu mensaje" rows="6" required></textarea>
                         </div>
                         <div class="12u$">
                             <ul class="actions">
@@ -83,7 +84,7 @@
                 <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
                 <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
                 <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-                <li><a href="#" class="icon fa-envelope-o"><span class="label">Correo Electrónico</span></a></li>
+                <li><a href="#" class="icon fa-envelope-o"><span class="label">Correo</span></a></li>
             </ul>
         </div>
     </footer>
